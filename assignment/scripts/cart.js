@@ -28,10 +28,14 @@ console.log( 'basket is:', basket);
 //   - return `true` indicating the item was added
 function addItem(item){
  console.log( 'in addItem:', item);
- basket.push('mango', 'strawberry' )
+ basket.push(item )
  return true
 }
-console.log('Adding items:', addItem('mango'));
+addItem('mango');
+addItem("strawberry");
+addItem('orange');
+
+console.log('Adding items:', addItem(basket));
 // - Create a function called `listItems`. It should:
 //   - loop over the items in the `basket` array
 //   - console.log each individual item on a new line
@@ -40,8 +44,7 @@ function listItem(){
     console.log( 'in listItem:',basket[i] );
   }
 }
-console.log( 'Each item is:', basket[0]);
-console.log( 'Each item is:', basket[1]);
+listItem()
 
 // - Create a function called `empty`. It should:
 //   - reset the `basket` to an empty array
